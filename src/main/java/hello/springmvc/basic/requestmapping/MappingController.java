@@ -18,17 +18,27 @@ public class MappingController {
         return "ok";
     }
 
+    /**
+     *
+     * @return
+     */
     @GetMapping("mapping-get-v2")
     public String mappingGetV2(){
         log.info("mapping-get-v2");
         return "ok";
     }
 
+    /**
+     *
+     * @param data
+     * @return
+     */
     @GetMapping("/mapping/{userId}")
     public String mappingPath(@PathVariable("userId") String data){
         log.info("mappingPath userId={}", data);
         return data;
     }
+    
 
 
 }
