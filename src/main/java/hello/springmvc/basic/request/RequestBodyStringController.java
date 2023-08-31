@@ -1,5 +1,6 @@
 package hello.springmvc.basic.request;
 
+import hello.springmvc.basic.HelloData;
 import jakarta.servlet.ServletInputStream;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -43,15 +44,15 @@ public class RequestBodyStringController {
     }
 
     @PostMapping("/request-body-string-v3")
-    public HttpEntity<String> requestBodyStringV2(HttpEntity<String> httpEntity) throws IOException{
+    public HttpEntity<String> requestBodyStringV3(HttpEntity<String> httpEntity) throws IOException{
         log.info("messageBody = {}", httpEntity.getBody());
 
         return new ResponseEntity<>("ok", HttpStatus.CREATED);
     }
 
     @ResponseBody
-    @PostMapping("/request-body-string-v3")
-    public String requestBodyStringV2(@RequestBody String messageBody) throws IOException{
+    @PostMapping("/request-body-string-v4")
+    public String requestBodyStringV4(@RequestBody String messageBody) throws IOException{
         log.info("messageBody = {}", messageBody);
 
         return "ok";
