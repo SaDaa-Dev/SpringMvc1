@@ -15,4 +15,9 @@ public class ResponseBodyController {
     public HttpEntity<String> responseBodyV1(HttpServletResponse response){
         return new ResponseEntity<>("ok", HttpStatus.OK);
     }
+
+    @GetMapping("/response-body-v2")
+    public String responseBodyV2(HttpServletResponse response){
+        return "ok";
+    }
 }
