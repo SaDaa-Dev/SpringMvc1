@@ -1,6 +1,5 @@
-package hello.springmvc.basic.request;
+package hello.springmvc.basic.old.request;
 
-import hello.springmvc.basic.HelloData;
 import jakarta.servlet.ServletInputStream;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -17,7 +16,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Writer;
-import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 
 @Slf4j

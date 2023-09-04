@@ -1,4 +1,4 @@
-package hello.springmvc.basic.response;
+package hello.springmvc.basic.old.response;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;

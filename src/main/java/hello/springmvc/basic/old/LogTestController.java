@@ -1,4 +1,4 @@
-package hello.springmvc.basic;
+package hello.springmvc.basic.old;
 
 import lombok.extern.log4j.Log4j;
 import lombok.extern.slf4j.Slf4j;

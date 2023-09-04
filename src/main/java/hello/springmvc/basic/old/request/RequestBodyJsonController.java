@@ -1,14 +1,13 @@
-package hello.springmvc.basic.request;
+package hello.springmvc.basic.old.request;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import hello.springmvc.basic.HelloData;
+import hello.springmvc.basic.old.HelloData;
 import jakarta.servlet.ServletInputStream;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StreamUtils;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;

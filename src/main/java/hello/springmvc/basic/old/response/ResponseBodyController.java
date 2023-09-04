@@ -1,6 +1,6 @@
-package hello.springmvc.basic.response;
+package hello.springmvc.basic.old.response;
 
-import hello.springmvc.basic.HelloData;
+import hello.springmvc.basic.old.HelloData;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpEntity;
