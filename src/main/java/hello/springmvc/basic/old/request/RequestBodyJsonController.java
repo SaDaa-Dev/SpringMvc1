@@ -21,6 +21,7 @@ public class RequestBodyJsonController {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
+    // 단순 Text Request -> ObjectMapper ( Json 파싱 ) -> response "OK"
     @PostMapping("/request-body-json-v1")
     public void requestBodyJsonV1(HttpServletRequest request, HttpServletResponse response) throws IOException {
         ServletInputStream inputStream = request.getInputStream();
@@ -33,6 +34,7 @@ public class RequestBodyJsonController {
         response.getWriter().write("ok");
     }
 
+    // Request Body -> Model로 파싱 -> "OK"
     @ResponseBody
     @PostMapping("/request-body-json-v2")
     public String requestBodyJsonV2(@RequestBody String messageBody) throws IOException {
@@ -43,6 +45,7 @@ public class RequestBodyJsonController {
         return "ok";
     }
 
+    // RequestBody 활용 -> Model로 바로 파싱
     @ResponseBody
     @PostMapping("/request-body-json-v3")
     public String requestBodyJsonV3(@RequestBody HelloData data) throws IOException {
