@@ -16,6 +16,7 @@ import java.util.Locale;
 @RestController
 public class RequestHeaderController {
 
+    // 여러 Header 정보들 가져올 수 있음
     @RequestMapping("/headers")
     public String headers(HttpServletRequest request,
                           HttpServletResponse response,
@@ -25,6 +26,5 @@ public class RequestHeaderController {
                           @RequestHeader("host") String host,
                           @CookieValue(value = "myCookie", required = false) String cookie){
         return "ok";
-        // github Test
     }
 }

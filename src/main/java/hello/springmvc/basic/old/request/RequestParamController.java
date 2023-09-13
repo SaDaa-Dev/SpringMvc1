@@ -16,6 +16,7 @@ import java.util.Map;
 @Slf4j
 @Controller
 public class RequestParamController {
+    // RequestParam, ModelAttribute 이용하여 Parameter 자동 매핑
 
     @RequestMapping("/request-param-v1")
     public void requestParamV1(HttpServletRequest request, HttpServletResponse response) throws IOException{
